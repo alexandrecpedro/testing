@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1638293665941" clover="3.2.0">
+  <project timestamp="1638293665942" name="All files">
+    <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4" elements="9" coveredelements="9" complexity="0" loc="5" ncloc="5" packages="1" files="1" classes="1"/>
+    <file name="calc.js" path="/Users/alexandrepedro/Desktop/CERTIFIED TECH DEVELOPER/Ano 1/Bimestre 2/Testing I/Aula19-Pratica/Calculadora/calc.js">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <line num="2" count="5" type="stmt"/>
+      <line num="6" count="5" type="stmt"/>
+      <line num="10" count="5" type="stmt"/>
+      <line num="14" count="5" type="stmt"/>
+      <line num="17" count="4" type="stmt"/>
+    </file>
+  </project>
+</coverage>
