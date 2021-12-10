@@ -1,0 +1,1026 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on darwin)" generated="20211209 13:16:18.698" rpa="false" schemaversion="2">
+<suite id="s1" name="Dh" source="/Users/alexandrepedro/Desktop/CERTIFIED TECH DEVELOPER/Ano 1/Bimestre 2/Testing I/RobotFramework/dh.robot">
+<test id="s1-t1" name="Validação das informações do curso de Data Analytics">
+<kw name="Abrir o novo site da Digital House Brasil" library="dh" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211209 13:16:19.162" level="INFO">Opening browser 'Chrome' to base url 'https://www.digitalhouse.com/br'.</msg>
+<status status="PASS" starttime="20211209 13:16:19.161" endtime="20211209 13:16:33.256"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211209 13:16:33.257" endtime="20211209 13:16:33.543"/>
+</kw>
+<status status="PASS" starttime="20211209 13:16:19.159" endtime="20211209 13:16:33.545"/>
+</kw>
+<kw name="Clicar em “Aceitar Cookies”" library="dh">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211209 13:16:38.550" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211209 13:16:33.548" endtime="20211209 13:16:38.551"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>${FRAME}</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20211209 13:16:38.552" level="INFO">Selecting frame 'xpath=/html/body/iframe[2]'.</msg>
+<status status="PASS" starttime="20211209 13:16:38.551" endtime="20211209 13:16:38.606"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ACEITAR-COOKIES}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211209 13:16:38.607" level="INFO">Clicking element 'xpath=/html/body/div/div/div[1]/div[1]/div[2]/div[1]/div[2]'.</msg>
+<status status="PASS" starttime="20211209 13:16:38.607" endtime="20211209 13:16:38.728"/>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20211209 13:16:38.729" endtime="20211209 13:16:38.740"/>
+</kw>
+<status status="PASS" starttime="20211209 13:16:33.546" endtime="20211209 13:16:38.741"/>
+</kw>
+<kw name="Clicar em “Conheça nossos cursos”" library="dh">
+<kw name="Wait and Click" library="dh">
+<arg>${BOTAO-CONHECA}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211209 13:16:38.743" endtime="20211209 13:16:38.778"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211209 13:16:38.778" endtime="20211209 13:16:38.809"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20211209 13:16:38.809" endtime="20211209 13:16:39.083"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211209 13:16:39.084" level="INFO">Clicking element 'css=.bg-indigo-600'.</msg>
+<status status="PASS" starttime="20211209 13:16:39.083" endtime="20211209 13:16:40.603"/>
+</kw>
+<status status="PASS" starttime="20211209 13:16:38.742" endtime="20211209 13:16:40.604"/>
+</kw>
+<status status="PASS" starttime="20211209 13:16:38.741" endtime="20211209 13:16:40.604"/>
+</kw>
+<kw name="Selecionar o curso “Data Analytics”" library="dh">
+<kw name="Wait and Click" library="dh">
+<arg>${DATA-ANALYTICS}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211209 13:16:40.606" endtime="20211209 13:16:40.736"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211209 13:16:40.736" endtime="20211209 13:16:40.801"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20211209 13:16:40.801" endtime="20211209 13:16:41.135"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211209 13:16:41.136" level="INFO">Clicking element 'css=.w-full:nth-child(1) &gt; .block .text-center'.</msg>
+<status status="PASS" starttime="20211209 13:16:41.135" endtime="20211209 13:16:42.695"/>
+</kw>
+<status status="PASS" starttime="20211209 13:16:40.605" endtime="20211209 13:16:42.696"/>
+</kw>
+<status status="PASS" starttime="20211209 13:16:40.604" endtime="20211209 13:16:42.696"/>
+</kw>
+<kw name="Verificar se o subtitulo do curso corresponde a “Transforme grandes quantidades de dados em insights.”" library="dh">
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${SUBTITULO}</arg>
+<arg>${TEXTO_SUBTITULO}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20211209 13:16:42.833" level="INFO">Element 'css=.text-gray-50' contains text 'Transforme grandes quantidades de dados em insights.'.</msg>
+<status status="PASS" starttime="20211209 13:16:42.700" endtime="20211209 13:16:42.833"/>
+</kw>
+<status status="PASS" starttime="20211209 13:16:42.698" endtime="20211209 13:16:42.834"/>
+</kw>
+<kw name="Verificar se a página contém o termo “manipulação e análise de dados”" library="dh">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${PAGINA-CONTEM}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20211209 13:16:42.927" level="INFO">Current page contains text 'manipulação e análise de dados'.</msg>
+<status status="PASS" starttime="20211209 13:16:42.835" endtime="20211209 13:16:42.928"/>
+</kw>
+<status status="PASS" starttime="20211209 13:16:42.834" endtime="20211209 13:16:42.928"/>
+</kw>
+<kw name="Clicar em “Inscreva-se”" library="dh">
+<kw name="Wait and Click" library="dh">
+<arg>${BOTAO-INSCREVA}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211209 13:16:42.929" endtime="20211209 13:16:42.958"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211209 13:16:42.958" endtime="20211209 13:16:42.987"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20211209 13:16:42.987" endtime="20211209 13:16:43.283"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211209 13:16:43.284" level="INFO">Clicking element 'xpath=(//a[contains(text(),'Inscreva-se')])[2]'.</msg>
+<status status="PASS" starttime="20211209 13:16:43.283" endtime="20211209 13:16:44.832"/>
+</kw>
+<status status="PASS" starttime="20211209 13:16:42.929" endtime="20211209 13:16:44.832"/>
+</kw>
+<status status="PASS" starttime="20211209 13:16:42.928" endtime="20211209 13:16:44.833"/>
+</kw>
+<kw name="Validar se o valor do curso é “R$ 9.824,00”" library="dh">
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${PRECO}</arg>
+<arg>${VALOR_CURSO}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20211209 13:16:44.877" level="INFO">Element 'css=.text-4xl:nth-child(2)' contains text 'R$ 9.824,00'.</msg>
+<status status="PASS" starttime="20211209 13:16:44.834" endtime="20211209 13:16:44.877"/>
+</kw>
+<status status="PASS" starttime="20211209 13:16:44.833" endtime="20211209 13:16:44.877"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211209 13:16:44.878" endtime="20211209 13:16:45.119"/>
+</kw>
+<status status="PASS" starttime="20211209 13:16:19.158" endtime="20211209 13:16:45.120"/>
+</test>
+<test id="s1-t2" name="Validação das informações do curso de Data Science">
+<kw name="Abrir o novo site da Digital House Brasil" library="dh" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211209 13:16:45.129" level="INFO">Opening browser 'Chrome' to base url 'https://www.digitalhouse.com/br'.</msg>
+<status status="PASS" starttime="20211209 13:16:45.128" endtime="20211209 13:16:54.708"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211209 13:16:54.709" endtime="20211209 13:16:55.358"/>
+</kw>
+<status status="PASS" starttime="20211209 13:16:45.127" endtime="20211209 13:16:55.358"/>
+</kw>
+<kw name="Clicar em “Aceitar Cookies”" library="dh">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211209 13:17:00.362" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211209 13:16:55.360" endtime="20211209 13:17:00.362"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>${FRAME}</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20211209 13:17:00.363" level="INFO">Selecting frame 'xpath=/html/body/iframe[2]'.</msg>
+<status status="PASS" starttime="20211209 13:17:00.363" endtime="20211209 13:17:00.408"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ACEITAR-COOKIES}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211209 13:17:00.409" level="INFO">Clicking element 'xpath=/html/body/div/div/div[1]/div[1]/div[2]/div[1]/div[2]'.</msg>
+<status status="PASS" starttime="20211209 13:17:00.408" endtime="20211209 13:17:00.540"/>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20211209 13:17:00.540" endtime="20211209 13:17:00.578"/>
+</kw>
+<status status="PASS" starttime="20211209 13:16:55.359" endtime="20211209 13:17:00.578"/>
+</kw>
+<kw name="Clicar em “Conheça nossos cursos”" library="dh">
+<kw name="Wait and Click" library="dh">
+<arg>${BOTAO-CONHECA}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211209 13:17:00.580" endtime="20211209 13:17:00.617"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211209 13:17:00.617" endtime="20211209 13:17:00.655"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20211209 13:17:00.656" endtime="20211209 13:17:00.937"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211209 13:17:00.938" level="INFO">Clicking element 'css=.bg-indigo-600'.</msg>
+<status status="PASS" starttime="20211209 13:17:00.938" endtime="20211209 13:17:02.656"/>
+</kw>
+<status status="PASS" starttime="20211209 13:17:00.579" endtime="20211209 13:17:02.656"/>
+</kw>
+<status status="PASS" starttime="20211209 13:17:00.578" endtime="20211209 13:17:02.657"/>
+</kw>
+<kw name="Selecionar o curso “Data Science”" library="dh">
+<kw name="Wait and Click" library="dh">
+<arg>${DATA-SCIENCE}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211209 13:17:02.659" endtime="20211209 13:17:02.771"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211209 13:17:02.771" endtime="20211209 13:17:02.817"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20211209 13:17:02.818" endtime="20211209 13:17:03.118"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211209 13:17:03.119" level="INFO">Clicking element 'css=.w-full:nth-child(2) &gt; .block .text-center'.</msg>
+<status status="PASS" starttime="20211209 13:17:03.118" endtime="20211209 13:17:04.962"/>
+</kw>
+<status status="PASS" starttime="20211209 13:17:02.658" endtime="20211209 13:17:04.962"/>
+</kw>
+<status status="PASS" starttime="20211209 13:17:02.657" endtime="20211209 13:17:04.962"/>
+</kw>
+<kw name="Verificar se o subtitulo do curso corresponde a “Machine learning, inteligência artificial e tudo mais sobre a ciência de dados.”" library="dh">
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${SUBTITULO}</arg>
+<arg>${TEXTO_SUBTITULO2}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20211209 13:17:05.229" level="INFO">Element 'css=.text-gray-50' contains text 'Machine learning, inteligência artificial e tudo mais sobre a ciência de dados'.</msg>
+<status status="PASS" starttime="20211209 13:17:04.963" endtime="20211209 13:17:05.229"/>
+</kw>
+<status status="PASS" starttime="20211209 13:17:04.963" endtime="20211209 13:17:05.230"/>
+</kw>
+<kw name="Verificar se a página contém o termo “processamento e análise de grandes quantidades de dados”" library="dh">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${PAGINA-CONTEM2}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20211209 13:17:06.214" level="INFO">Current page contains text 'processamento e análise de grandes quantidades de dados'.</msg>
+<status status="PASS" starttime="20211209 13:17:05.231" endtime="20211209 13:17:06.214"/>
+</kw>
+<status status="PASS" starttime="20211209 13:17:05.230" endtime="20211209 13:17:06.215"/>
+</kw>
+<kw name="Clicar em “Inscreva-se”" library="dh">
+<kw name="Wait and Click" library="dh">
+<arg>${BOTAO-INSCREVA}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211209 13:17:06.216" endtime="20211209 13:17:06.256"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211209 13:17:06.256" endtime="20211209 13:17:06.293"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20211209 13:17:06.294" endtime="20211209 13:17:06.580"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211209 13:17:06.581" level="INFO">Clicking element 'xpath=(//a[contains(text(),'Inscreva-se')])[2]'.</msg>
+<status status="PASS" starttime="20211209 13:17:06.580" endtime="20211209 13:17:08.319"/>
+</kw>
+<status status="PASS" starttime="20211209 13:17:06.215" endtime="20211209 13:17:08.319"/>
+</kw>
+<status status="PASS" starttime="20211209 13:17:06.215" endtime="20211209 13:17:08.320"/>
+</kw>
+<kw name="Validar se o valor do curso é “R$ 11.312,00”" library="dh">
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${PRECO}</arg>
+<arg>${VALOR_CURSO2}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20211209 13:17:08.466" level="INFO">Element 'css=.text-4xl:nth-child(2)' contains text 'R$ 11.312,00'.</msg>
+<status status="PASS" starttime="20211209 13:17:08.321" endtime="20211209 13:17:08.467"/>
+</kw>
+<status status="PASS" starttime="20211209 13:17:08.321" endtime="20211209 13:17:08.468"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211209 13:17:08.469" endtime="20211209 13:17:08.675"/>
+</kw>
+<status status="PASS" starttime="20211209 13:16:45.126" endtime="20211209 13:17:08.676"/>
+</test>
+<test id="s1-t3" name="Validação das informações do curso de Desenvolvimento Mobile Android">
+<kw name="Abrir o novo site da Digital House Brasil" library="dh" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211209 13:17:08.683" level="INFO">Opening browser 'Chrome' to base url 'https://www.digitalhouse.com/br'.</msg>
+<status status="PASS" starttime="20211209 13:17:08.682" endtime="20211209 13:17:18.947"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211209 13:17:18.948" endtime="20211209 13:17:19.211"/>
+</kw>
+<status status="PASS" starttime="20211209 13:17:08.681" endtime="20211209 13:17:19.211"/>
+</kw>
+<kw name="Clicar em “Aceitar Cookies”" library="dh">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211209 13:17:24.214" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211209 13:17:19.213" endtime="20211209 13:17:24.214"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>${FRAME}</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20211209 13:17:24.216" level="INFO">Selecting frame 'xpath=/html/body/iframe[2]'.</msg>
+<status status="PASS" starttime="20211209 13:17:24.214" endtime="20211209 13:17:24.286"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ACEITAR-COOKIES}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211209 13:17:24.287" level="INFO">Clicking element 'xpath=/html/body/div/div/div[1]/div[1]/div[2]/div[1]/div[2]'.</msg>
+<status status="PASS" starttime="20211209 13:17:24.286" endtime="20211209 13:17:24.423"/>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20211209 13:17:24.423" endtime="20211209 13:17:24.430"/>
+</kw>
+<status status="PASS" starttime="20211209 13:17:19.212" endtime="20211209 13:17:24.431"/>
+</kw>
+<kw name="Clicar em “Conheça nossos cursos”" library="dh">
+<kw name="Wait and Click" library="dh">
+<arg>${BOTAO-CONHECA}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211209 13:17:24.432" endtime="20211209 13:17:24.481"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211209 13:17:24.481" endtime="20211209 13:17:24.522"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20211209 13:17:24.522" endtime="20211209 13:17:24.868"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211209 13:17:24.868" level="INFO">Clicking element 'css=.bg-indigo-600'.</msg>
+<status status="PASS" starttime="20211209 13:17:24.868" endtime="20211209 13:17:26.443"/>
+</kw>
+<status status="PASS" starttime="20211209 13:17:24.432" endtime="20211209 13:17:26.443"/>
+</kw>
+<status status="PASS" starttime="20211209 13:17:24.431" endtime="20211209 13:17:26.444"/>
+</kw>
+<kw name="Selecionar o curso “Desenvolvimento Mobile Android”" library="dh">
+<kw name="Wait and Click" library="dh">
+<arg>${DEV-MOBILEANDROID}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211209 13:17:26.446" endtime="20211209 13:17:26.577"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211209 13:17:26.577" endtime="20211209 13:17:26.801"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20211209 13:17:26.801" endtime="20211209 13:17:27.975"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211209 13:17:27.976" level="INFO">Clicking element 'css=.w-full:nth-child(3) &gt; .block .text-center'.</msg>
+<status status="PASS" starttime="20211209 13:17:27.975" endtime="20211209 13:17:30.006"/>
+</kw>
+<status status="PASS" starttime="20211209 13:17:26.445" endtime="20211209 13:17:30.007"/>
+</kw>
+<status status="PASS" starttime="20211209 13:17:26.444" endtime="20211209 13:17:30.007"/>
+</kw>
+<kw name="Verificar se o subtitulo do curso corresponde a “Crie seu próprio app do zero em até 5 meses”" library="dh">
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${SUBTITULO}</arg>
+<arg>${TEXTO_SUBTITULO3}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20211209 13:17:30.324" level="INFO">Element 'css=.text-gray-50' contains text 'Crie seu próprio app do zero em até 5 meses'.</msg>
+<status status="PASS" starttime="20211209 13:17:30.010" endtime="20211209 13:17:30.324"/>
+</kw>
+<status status="PASS" starttime="20211209 13:17:30.008" endtime="20211209 13:17:30.325"/>
+</kw>
+<kw name="Verificar se a página contém o termo “desenvolver aplicações móveis como um programador profissional”" library="dh">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${PAGINA-CONTEM3}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20211209 13:17:30.349" level="INFO">Current page contains text 'desenvolver aplicações móveis como um programador profissional'.</msg>
+<status status="PASS" starttime="20211209 13:17:30.326" endtime="20211209 13:17:30.349"/>
+</kw>
+<status status="PASS" starttime="20211209 13:17:30.325" endtime="20211209 13:17:30.349"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211209 13:17:30.350" endtime="20211209 13:17:31.078"/>
+</kw>
+<status status="PASS" starttime="20211209 13:17:08.679" endtime="20211209 13:17:31.078"/>
+</test>
+<test id="s1-t4" name="Validação das informações do curso de Desenvolvimento Mobile IOS">
+<kw name="Abrir o novo site da Digital House Brasil" library="dh" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211209 13:17:31.083" level="INFO">Opening browser 'Chrome' to base url 'https://www.digitalhouse.com/br'.</msg>
+<status status="PASS" starttime="20211209 13:17:31.082" endtime="20211209 13:17:41.125"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211209 13:17:41.127" endtime="20211209 13:17:41.414"/>
+</kw>
+<status status="PASS" starttime="20211209 13:17:31.081" endtime="20211209 13:17:41.414"/>
+</kw>
+<kw name="Clicar em “Aceitar Cookies”" library="dh">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211209 13:17:46.417" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211209 13:17:41.416" endtime="20211209 13:17:46.417"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>${FRAME}</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20211209 13:17:46.418" level="INFO">Selecting frame 'xpath=/html/body/iframe[2]'.</msg>
+<status status="PASS" starttime="20211209 13:17:46.417" endtime="20211209 13:17:46.724"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ACEITAR-COOKIES}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211209 13:17:46.724" level="INFO">Clicking element 'xpath=/html/body/div/div/div[1]/div[1]/div[2]/div[1]/div[2]'.</msg>
+<status status="PASS" starttime="20211209 13:17:46.724" endtime="20211209 13:17:46.859"/>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20211209 13:17:46.860" endtime="20211209 13:17:46.865"/>
+</kw>
+<status status="PASS" starttime="20211209 13:17:41.415" endtime="20211209 13:17:46.866"/>
+</kw>
+<kw name="Clicar em “Conheça nossos cursos”" library="dh">
+<kw name="Wait and Click" library="dh">
+<arg>${BOTAO-CONHECA}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211209 13:17:46.867" endtime="20211209 13:17:46.909"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211209 13:17:46.910" endtime="20211209 13:17:46.947"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20211209 13:17:46.948" endtime="20211209 13:17:47.224"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211209 13:17:47.224" level="INFO">Clicking element 'css=.bg-indigo-600'.</msg>
+<status status="PASS" starttime="20211209 13:17:47.224" endtime="20211209 13:17:48.506"/>
+</kw>
+<status status="PASS" starttime="20211209 13:17:46.866" endtime="20211209 13:17:48.506"/>
+</kw>
+<status status="PASS" starttime="20211209 13:17:46.866" endtime="20211209 13:17:48.507"/>
+</kw>
+<kw name="Selecionar o curso “Desenvolvimento Mobile IOS”" library="dh">
+<kw name="Wait and Click" library="dh">
+<arg>${DEV-MOBILEIOS}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211209 13:17:48.508" endtime="20211209 13:17:48.686"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211209 13:17:48.687" endtime="20211209 13:17:48.810"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20211209 13:17:48.810" endtime="20211209 13:17:49.112"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211209 13:17:49.113" level="INFO">Clicking element 'css=.w-full:nth-child(4) &gt; .block .text-center'.</msg>
+<status status="PASS" starttime="20211209 13:17:49.113" endtime="20211209 13:17:51.410"/>
+</kw>
+<status status="PASS" starttime="20211209 13:17:48.507" endtime="20211209 13:17:51.410"/>
+</kw>
+<status status="PASS" starttime="20211209 13:17:48.507" endtime="20211209 13:17:51.410"/>
+</kw>
+<kw name="Verificar se o subtitulo do curso corresponde a “Aprenda Swift e crie seu próprio app em até 5 meses”" library="dh">
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${SUBTITULO}</arg>
+<arg>${TEXTO_SUBTITULO4}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20211209 13:17:51.463" level="INFO">Element 'css=.text-gray-50' contains text 'Aprenda Swift e crie seu próprio app em até 5 meses'.</msg>
+<status status="PASS" starttime="20211209 13:17:51.411" endtime="20211209 13:17:51.463"/>
+</kw>
+<status status="PASS" starttime="20211209 13:17:51.411" endtime="20211209 13:17:51.463"/>
+</kw>
+<kw name="Verificar se a página contém o termo “criar apps estáveis, funcionais e atrativos”" library="dh">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${PAGINA-CONTEM4}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20211209 13:17:51.500" level="INFO">Current page contains text 'criar apps estáveis, funcionais e atrativos'.</msg>
+<status status="PASS" starttime="20211209 13:17:51.464" endtime="20211209 13:17:51.500"/>
+</kw>
+<status status="PASS" starttime="20211209 13:17:51.464" endtime="20211209 13:17:51.500"/>
+</kw>
+<kw name="Clicar em “Inscreva-se”" library="dh">
+<kw name="Wait and Click" library="dh">
+<arg>${BOTAO-INSCREVA}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211209 13:17:51.502" endtime="20211209 13:17:51.541"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211209 13:17:51.541" endtime="20211209 13:17:51.568"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20211209 13:17:51.569" endtime="20211209 13:17:51.865"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211209 13:17:51.866" level="INFO">Clicking element 'xpath=(//a[contains(text(),'Inscreva-se')])[2]'.</msg>
+<status status="PASS" starttime="20211209 13:17:51.865" endtime="20211209 13:17:53.496"/>
+</kw>
+<status status="PASS" starttime="20211209 13:17:51.501" endtime="20211209 13:17:53.496"/>
+</kw>
+<status status="PASS" starttime="20211209 13:17:51.501" endtime="20211209 13:17:53.497"/>
+</kw>
+<kw name="Validar se o valor do curso é “R$ 8.269,00”" library="dh">
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${PRECO}</arg>
+<arg>${VALOR_CURSO4}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20211209 13:17:53.635" level="INFO">Element 'css=.text-4xl:nth-child(2)' contains text 'R$ 8.269,00'.</msg>
+<status status="PASS" starttime="20211209 13:17:53.498" endtime="20211209 13:17:53.635"/>
+</kw>
+<status status="PASS" starttime="20211209 13:17:53.497" endtime="20211209 13:17:53.635"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211209 13:17:53.636" endtime="20211209 13:17:53.890"/>
+</kw>
+<status status="PASS" starttime="20211209 13:17:31.079" endtime="20211209 13:17:53.890"/>
+</test>
+<test id="s1-t5" name="Validação das informações do curso de Desenvolvimento Web Full Stack">
+<kw name="Abrir o novo site da Digital House Brasil" library="dh" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211209 13:17:53.896" level="INFO">Opening browser 'Chrome' to base url 'https://www.digitalhouse.com/br'.</msg>
+<status status="PASS" starttime="20211209 13:17:53.895" endtime="20211209 13:18:02.836"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211209 13:18:02.837" endtime="20211209 13:18:03.134"/>
+</kw>
+<status status="PASS" starttime="20211209 13:17:53.894" endtime="20211209 13:18:03.135"/>
+</kw>
+<kw name="Clicar em “Aceitar Cookies”" library="dh">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211209 13:18:08.139" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211209 13:18:03.136" endtime="20211209 13:18:08.139"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>${FRAME}</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20211209 13:18:08.140" level="INFO">Selecting frame 'xpath=/html/body/iframe[2]'.</msg>
+<status status="PASS" starttime="20211209 13:18:08.139" endtime="20211209 13:18:08.198"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ACEITAR-COOKIES}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211209 13:18:08.198" level="INFO">Clicking element 'xpath=/html/body/div/div/div[1]/div[1]/div[2]/div[1]/div[2]'.</msg>
+<status status="PASS" starttime="20211209 13:18:08.198" endtime="20211209 13:18:08.335"/>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20211209 13:18:08.336" endtime="20211209 13:18:08.342"/>
+</kw>
+<status status="PASS" starttime="20211209 13:18:03.135" endtime="20211209 13:18:08.342"/>
+</kw>
+<kw name="Clicar em “Conheça nossos cursos”" library="dh">
+<kw name="Wait and Click" library="dh">
+<arg>${BOTAO-CONHECA}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211209 13:18:08.345" endtime="20211209 13:18:08.382"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211209 13:18:08.382" endtime="20211209 13:18:08.420"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20211209 13:18:08.420" endtime="20211209 13:18:08.703"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211209 13:18:08.704" level="INFO">Clicking element 'css=.bg-indigo-600'.</msg>
+<status status="PASS" starttime="20211209 13:18:08.704" endtime="20211209 13:18:10.350"/>
+</kw>
+<status status="PASS" starttime="20211209 13:18:08.343" endtime="20211209 13:18:10.350"/>
+</kw>
+<status status="PASS" starttime="20211209 13:18:08.343" endtime="20211209 13:18:10.351"/>
+</kw>
+<kw name="Selecionar o curso “Desenvolvimento Web Full Stack”" library="dh">
+<kw name="Wait and Click" library="dh">
+<arg>${DEV-FULLSTACK}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211209 13:18:10.352" endtime="20211209 13:18:10.437"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211209 13:18:10.437" endtime="20211209 13:18:10.490"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20211209 13:18:10.491" endtime="20211209 13:18:10.817"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211209 13:18:10.817" level="INFO">Clicking element 'css=.w-full:nth-child(5) &gt; .block .text-center'.</msg>
+<status status="PASS" starttime="20211209 13:18:10.817" endtime="20211209 13:18:12.511"/>
+</kw>
+<status status="PASS" starttime="20211209 13:18:10.352" endtime="20211209 13:18:12.511"/>
+</kw>
+<status status="PASS" starttime="20211209 13:18:10.351" endtime="20211209 13:18:12.512"/>
+</kw>
+<kw name="Verificar se o subtitulo do curso corresponde a “Aprenda a criar sites e aplicativos web, do começo ao fim.”" library="dh">
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${SUBTITULO}</arg>
+<arg>${TEXTO_SUBTITULO5}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20211209 13:18:12.602" level="INFO">Element 'css=.text-gray-50' contains text 'Aprenda a criar sites e aplicativos web, do começo ao fim'.</msg>
+<status status="PASS" starttime="20211209 13:18:12.513" endtime="20211209 13:18:12.602"/>
+</kw>
+<status status="PASS" starttime="20211209 13:18:12.512" endtime="20211209 13:18:12.602"/>
+</kw>
+<kw name="Verificar se a página contém o termo “integração do front-end com o back-end”" library="dh">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${PAGINA-CONTEM5}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20211209 13:18:12.630" level="INFO">Current page contains text 'integração do front-end com o back-end'.</msg>
+<status status="PASS" starttime="20211209 13:18:12.603" endtime="20211209 13:18:12.630"/>
+</kw>
+<status status="PASS" starttime="20211209 13:18:12.602" endtime="20211209 13:18:12.630"/>
+</kw>
+<kw name="Clicar em “Inscreva-se”" library="dh">
+<kw name="Wait and Click" library="dh">
+<arg>${BOTAO-INSCREVA}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211209 13:18:12.633" endtime="20211209 13:18:12.663"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211209 13:18:12.663" endtime="20211209 13:18:12.689"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20211209 13:18:12.689" endtime="20211209 13:18:12.982"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211209 13:18:12.983" level="INFO">Clicking element 'xpath=(//a[contains(text(),'Inscreva-se')])[2]'.</msg>
+<status status="PASS" starttime="20211209 13:18:12.982" endtime="20211209 13:18:14.899"/>
+</kw>
+<status status="PASS" starttime="20211209 13:18:12.632" endtime="20211209 13:18:14.899"/>
+</kw>
+<status status="PASS" starttime="20211209 13:18:12.631" endtime="20211209 13:18:14.900"/>
+</kw>
+<kw name="Validar se o valor do curso é “R$ 9.824,00”" library="dh">
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${PRECO}</arg>
+<arg>${VALOR_CURSO}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20211209 13:18:14.980" level="INFO">Element 'css=.text-4xl:nth-child(2)' contains text 'R$ 9.824,00'.</msg>
+<status status="PASS" starttime="20211209 13:18:14.901" endtime="20211209 13:18:14.981"/>
+</kw>
+<status status="PASS" starttime="20211209 13:18:14.900" endtime="20211209 13:18:14.981"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211209 13:18:14.984" endtime="20211209 13:18:15.297"/>
+</kw>
+<status status="PASS" starttime="20211209 13:17:53.892" endtime="20211209 13:18:15.299"/>
+</test>
+<test id="s1-t6" name="Validação das informações do curso Certified Tech Developer">
+<kw name="Abrir o novo site da Digital House Brasil" library="dh" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211209 13:18:15.311" level="INFO">Opening browser 'Chrome' to base url 'https://www.digitalhouse.com/br'.</msg>
+<status status="PASS" starttime="20211209 13:18:15.309" endtime="20211209 13:18:24.476"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211209 13:18:24.477" endtime="20211209 13:18:25.202"/>
+</kw>
+<status status="PASS" starttime="20211209 13:18:15.308" endtime="20211209 13:18:25.202"/>
+</kw>
+<kw name="Clicar em “Aceitar Cookies”" library="dh">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211209 13:18:30.207" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211209 13:18:25.204" endtime="20211209 13:18:30.214"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>${FRAME}</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20211209 13:18:30.224" level="INFO">Selecting frame 'xpath=/html/body/iframe[2]'.</msg>
+<status status="PASS" starttime="20211209 13:18:30.218" endtime="20211209 13:18:30.374"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ACEITAR-COOKIES}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211209 13:18:30.375" level="INFO">Clicking element 'xpath=/html/body/div/div/div[1]/div[1]/div[2]/div[1]/div[2]'.</msg>
+<status status="PASS" starttime="20211209 13:18:30.375" endtime="20211209 13:18:30.556"/>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20211209 13:18:30.556" endtime="20211209 13:18:30.561"/>
+</kw>
+<status status="PASS" starttime="20211209 13:18:25.203" endtime="20211209 13:18:30.562"/>
+</kw>
+<kw name="Clicar em “Conheça nossos cursos”" library="dh">
+<kw name="Wait and Click" library="dh">
+<arg>${BOTAO-CONHECA}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211209 13:18:30.564" endtime="20211209 13:18:30.613"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211209 13:18:30.614" endtime="20211209 13:18:30.665"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20211209 13:18:30.665" endtime="20211209 13:18:30.946"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211209 13:18:30.946" level="INFO">Clicking element 'css=.bg-indigo-600'.</msg>
+<status status="PASS" starttime="20211209 13:18:30.946" endtime="20211209 13:18:31.813"/>
+</kw>
+<status status="PASS" starttime="20211209 13:18:30.563" endtime="20211209 13:18:31.813"/>
+</kw>
+<status status="PASS" starttime="20211209 13:18:30.562" endtime="20211209 13:18:31.814"/>
+</kw>
+<kw name="Selecionar o curso “Certified Tech Developer”" library="dh">
+<kw name="Wait and Click" library="dh">
+<arg>${DEV-CTD}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211209 13:18:31.817" endtime="20211209 13:18:32.620"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211209 13:18:32.620" endtime="20211209 13:18:32.759"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20211209 13:18:32.759" endtime="20211209 13:18:33.089"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211209 13:18:33.090" level="INFO">Clicking element 'css=.w-full:nth-child(10) &gt; .block .text-center'.</msg>
+<status status="PASS" starttime="20211209 13:18:33.089" endtime="20211209 13:18:40.157"/>
+</kw>
+<status status="PASS" starttime="20211209 13:18:31.816" endtime="20211209 13:18:40.157"/>
+</kw>
+<status status="PASS" starttime="20211209 13:18:31.814" endtime="20211209 13:18:40.158"/>
+</kw>
+<kw name="Verificar se o subtitulo do curso corresponde a “Crie novas formas de viver o mundo”" library="dh">
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>${SUBTITULO-CTD}</arg>
+<arg>${TEXTO_SUBTITULO6}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20211209 13:18:40.306" level="INFO">Element 'css=#uJoXSc4pmpxQqCNPVe60oOnXzvTHiJXF &gt; h1 &gt; font &gt; b' contains text 'Crie novas formas de viver o mundo'.</msg>
+<status status="PASS" starttime="20211209 13:18:40.160" endtime="20211209 13:18:40.306"/>
+</kw>
+<status status="PASS" starttime="20211209 13:18:40.159" endtime="20211209 13:18:40.307"/>
+</kw>
+<kw name="Verificar se a página contém o termo “Venha desenvolver uma carreira que pode mudar o mundo”" library="dh">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${PAGINA-CONTEM6}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20211209 13:18:41.095" level="INFO">Current page contains text 'Venha desenvolver uma carreira que pode mudar o mundo'.</msg>
+<status status="PASS" starttime="20211209 13:18:40.308" endtime="20211209 13:18:41.095"/>
+</kw>
+<kw name="Wait and Click" library="dh">
+<arg>${ACEITA-COOKIES}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211209 13:18:41.096" endtime="20211209 13:18:41.179"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211209 13:18:41.179" endtime="20211209 13:18:41.212"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20211209 13:18:41.212" endtime="20211209 13:18:41.652"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211209 13:18:41.652" level="INFO">Clicking element 'css=#btn-cookie-consent'.</msg>
+<status status="PASS" starttime="20211209 13:18:41.652" endtime="20211209 13:18:41.822"/>
+</kw>
+<status status="PASS" starttime="20211209 13:18:41.095" endtime="20211209 13:18:41.822"/>
+</kw>
+<status status="PASS" starttime="20211209 13:18:40.307" endtime="20211209 13:18:41.823"/>
+</kw>
+<kw name="Preencher os campos do formulário “Faça parte do futuro digital”" library="dh">
+<kw name="Wait and Input Text" library="dh">
+<arg>${CAMPO-NOME}</arg>
+<arg>${NOME}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211209 13:18:41.826" endtime="20211209 13:18:42.336"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211209 13:18:42.336" endtime="20211209 13:18:42.365"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<arg>${TEXTO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211209 13:18:42.366" level="INFO">Typing text 'Alex' into text field 'css=#SPxdIrhGPqy1WTAe5qzVoB7MONOoSOZB'.</msg>
+<status status="PASS" starttime="20211209 13:18:42.365" endtime="20211209 13:18:42.786"/>
+</kw>
+<status status="PASS" starttime="20211209 13:18:41.825" endtime="20211209 13:18:42.786"/>
+</kw>
+<kw name="Wait and Input Text" library="dh">
+<arg>${CAMPO-SOBRENOME}</arg>
+<arg>${SOBRENOME}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211209 13:18:42.789" endtime="20211209 13:18:42.869"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211209 13:18:42.870" endtime="20211209 13:18:42.913"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<arg>${TEXTO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211209 13:18:42.913" level="INFO">Typing text 'Tabajara' into text field 'css=#DyESSyoTrg8EZUGtiPbmZmuL5y03FlCN'.</msg>
+<status status="PASS" starttime="20211209 13:18:42.913" endtime="20211209 13:18:43.067"/>
+</kw>
+<status status="PASS" starttime="20211209 13:18:42.786" endtime="20211209 13:18:43.068"/>
+</kw>
+<kw name="Wait and Input Text" library="dh">
+<arg>${CAMPO-EMAIL}</arg>
+<arg>${EMAIL}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211209 13:18:43.069" endtime="20211209 13:18:43.102"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211209 13:18:43.102" endtime="20211209 13:18:43.153"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<arg>${TEXTO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211209 13:18:43.155" level="INFO">Typing text 'alex@tabajara.com.br' into text field 'css=#Lbqhh6B7SmT1OnakIxZ0TBmT2o2IxVNq'.</msg>
+<status status="PASS" starttime="20211209 13:18:43.154" endtime="20211209 13:18:43.331"/>
+</kw>
+<status status="PASS" starttime="20211209 13:18:43.068" endtime="20211209 13:18:43.332"/>
+</kw>
+<kw name="Wait and Input Text" library="dh">
+<arg>${CAMPO-CELULAR}</arg>
+<arg>${CELULAR}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211209 13:18:43.333" endtime="20211209 13:18:43.364"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20211209 13:18:43.365" endtime="20211209 13:18:43.400"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<arg>${TEXTO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211209 13:18:43.401" level="INFO">Typing text '11999999999' into text field 'css=#zVe3bzxdSNmVk5qFPuJgonal9LqQMlq8'.</msg>
+<status status="PASS" starttime="20211209 13:18:43.400" endtime="20211209 13:18:43.689"/>
+</kw>
+<status status="PASS" starttime="20211209 13:18:43.332" endtime="20211209 13:18:43.689"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${CAMPO-ESTADO}</arg>
+<arg>${ESTADO}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20211209 13:18:43.690" level="INFO">Selecting options from selection list 'css=#FhKAsNwtv8stLHRSHxLfxd7lkcUMkiM6' by value São Paulo.</msg>
+<status status="PASS" starttime="20211209 13:18:43.690" endtime="20211209 13:18:43.840"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${COMOSOUBECURSO}</arg>
+<arg>${OPCAO}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20211209 13:18:43.841" level="INFO">Selecting options from selection list 'css=#oNRhffVuMHVvyC4GWZzrJrIGLDmweIxT' by value LinkedIn.</msg>
+<status status="PASS" starttime="20211209 13:18:43.841" endtime="20211209 13:18:43.970"/>
+</kw>
+<status status="PASS" starttime="20211209 13:18:41.823" endtime="20211209 13:18:43.970"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211209 13:18:43.972" endtime="20211209 13:18:44.334"/>
+</kw>
+<status status="PASS" starttime="20211209 13:18:15.305" endtime="20211209 13:18:44.334"/>
+</test>
+<status status="PASS" starttime="20211209 13:16:18.701" endtime="20211209 13:18:44.339"/>
+</suite>
+<statistics>
+<total>
+<stat pass="6" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="6" fail="0" skip="0" id="s1" name="Dh">Dh</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
